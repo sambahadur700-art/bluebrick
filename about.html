@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlueBrick Real Estate | Luxury Properties</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="logo">
+        <img src="assets/logo01.png" alt="logo image" />
+      </div>
+
+      <button
+        class="nav-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" role="menubar">
+        <li class="nav-item" role="none">
+          <a href="index.html" class="nav-link" role="menuitem">HOME</a>
+        </li>
+        <li class="nav-item" role="none">
+          <a href="about.html" class="nav-link" role="menuitem">ABOUT US</a>
+        </li>
+        <li class="nav-item" role="none">
+          <a
+            href="#"
+            class="nav-link has-dropdown"
+            role="menuitem"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            SERVICES
+            <button
+              class="dropdown-btn"
+              aria-label="Toggle Off Plan Projects submenu"
+            >
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </a>
+          <div class="dropdown" role="menu">
+            <a
+              href="dynamicproperties-type02.html?type=sale"
+              class="dropdown-item"
+              role="menuitem"
+              >FOR SALE</a
+            >
+            <a
+              href="dynamicproperties-type02.html?type=rent"
+              class="dropdown-item"
+              role="menuitem"
+              >FOR RENT</a
+            >
+            <a
+              href="dynamicproperties-type02.html?type=offplan"
+              class="dropdown-item"
+              role="menuitem"
+              >OFF PLAN</a
+            >
+          </div>
+        </li>
+        <li class="nav-item" role="none">
+          <a
+            href="#"
+            class="nav-link has-dropdown"
+            role="menuitem"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            DEVELOPER
+            <button class="dropdown-btn" aria-label="Toggle Developer submenu">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </a>
+          <div class="dropdown" role="menu">
+            <a
+              href="dynamic-developers.html?developer=emaar"
+              class="dropdown-item"
+              >EMAAR PROPERTIES</a
+            >
+            <a
+              href="dynamic-developers.html?developer=damac"
+              class="dropdown-item"
+              >DAMAC PROPERTIES</a
+            >
+            <a
+              href="dynamic-developers.html?developer=nakheel"
+              class="dropdown-item"
+              >NAKHEEL PROPERTIES</a
+            >
+            <a
+              href="dynamic-developers.html?developer=ellington"
+              class="dropdown-item"
+              >ELLINGTON PROPERTIES</a
+            >
+            <a
+              href="dynamic-developers.html?developer=meraas"
+              class="dropdown-item"
+              >MERAAS</a
+            >
+          </div>
+        </li>
+        <li class="nav-item" role="none">
+          <a href="contact.html" class="nav-link" role="menuitem">CONTACT</a>
+        </li>
+        <li class="nav-item" role="none">
+          <a
+            href="#"
+            class="nav-link schedule"
+            id="demoTriggerBtn"
+            role="menuitem"
+            >SCHEDULE A VISIT</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-top">
+      <div class="about-top-content">
+        <h1>ABOUT</h1>
+        <div class="top-path" style="font-size: 20px">
+          <a href="index.html" style="color: white; text-decoration: none"
+            >Home</a
+          >
+          &gt;
+          <span id="property-title-breadcrumb">About</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+      <div class="container">
+        <h2 class="animate-on-scroll">Our Story</h2>
+        <div class="about-us-content">
+          <div class="about-us-text animate-on-scroll slide-in-left delay-1">
+            <p>
+              At BlueBrick Real Estate, we focus on delivering reliable property
+              solutions tailored to the needs of modern buyers and investors.
+              Our portfolio includes quality residential homes, modern
+              apartments in prime locations, well-designed villas, and
+              attractive investment properties in growing communities.
+            </p>
+            <p>
+              Each property is carefully selected to ensure comfort, value, and
+              long-term potential, helping our clients find homes and
+              investments that truly match their goals.
+            </p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+          <div class="about-us-image animate-on-scroll slide-in-right delay-1">
+            <img
+              src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+              alt="Luxury Dubai real estate"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- model nabar button -->
+    <div class="modal-overlay" id="contactModal">
+      <div class="contact-modal">
+        <button class="close-modal" id="closeModal">&times;</button>
+
+        <div class="modal-header">
+          <h2>Contact Us</h2>
+          <p>Fill out the form below and we'll get back to you shortly</p>
+        </div>
+
+        <form id="modalContactForm" class="modal-form">
+          <div class="form-group">
+            <label for="modal-name">Full Name</label>
+            <input
+              type="text"
+              id="modal-name"
+              name="user_name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="modal-email">Email Address</label>
+            <input
+              type="email"
+              id="modal-email"
+              name="user_email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="modal-phone">Phone Number</label>
+            <input
+              type="tel"
+              id="modal-phone"
+              name="user_phone"
+              placeholder="Enter phone number"
+              required
+            />
+          </div>
+
+          <button type="submit" class="submit-btn" id="modalSubmitBtn">
+            Send Message
+          </button>
+
+          <div class="form-message" id="modalFormMessage"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Our Mission Section -->
+    <section class="our-mission">
+      <div class="container">
+        <h2 class="animate-on-scroll">Our Mission & Vision</h2>
+        <div class="our-mission-content">
+          <div class="our-mission-text">
+            <div class="our-mission-box animate-on-scroll slide-in-left">
+              <h3>Mission</h3>
+              <p>
+                To provide reliable real estate services and quality property
+                options that help clients buy, sell, and invest with confidence
+                while building long-term value.
+              </p>
+            </div>
+
+            <div
+              class="our-mission-box animate-on-scroll slide-in-left delay-1"
+            >
+              <h3>Vision</h3>
+              <p>
+                To become a trusted real estate brand known for transparency,
+                professionalism, and helping people find the right properties
+                for their lifestyle and investment goals.
+              </p>
+            </div>
+          </div>
+          <div class="our-mission-image animate-on-scroll slide-in-right">
+            <img
+              src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+              alt="Dubai luxury property"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+      <div class="container">
+        <h2 class="animate-on-scroll">Why Choose BlueBrick Real Estate?</h2>
+        <p
+          class="animate-on-scroll"
+          style="text-align: center; max-width: 800px; margin: 0 auto 50px"
+        >
+          At BlueBrick Real Estate, we go beyond simple property transactions.
+          Our goal is to provide reliable guidance, quality property options,
+          and a smooth experience for buyers, sellers, and investors looking to
+          make confident real estate decisions.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-item animate-on-scroll slide-in-left">
+            <div class="feature-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3>Trusted Experience</h3>
+            <p>
+              With strong industry knowledge and practical experience, we help
+              clients navigate property markets and make confident investments.
+            </p>
+          </div>
+
+          <div class="feature-item animate-on-scroll slide-in-up">
+            <div class="feature-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3>Quality Property Listings</h3>
+            <p>
+              Explore carefully selected residential and commercial properties
+              located in desirable areas with strong value potential.
+            </p>
+          </div>
+
+          <div class="feature-item animate-on-scroll slide-in-up">
+            <div class="feature-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>Market Knowledge</h3>
+            <p>
+              Our team closely monitors property trends and market conditions to
+              provide insights that help clients make smart decisions.
+            </p>
+          </div>
+
+          <div class="feature-item animate-on-scroll slide-in-right">
+            <div class="feature-icon">
+              <i class="fas fa-user-cog"></i>
+            </div>
+            <h3>Client-Focused Service</h3>
+            <p>
+              Every client is unique. We offer personalized guidance and support
+              to ensure a smooth and successful property experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Ethos Section -->
+    <section class="our-ethos">
+      <div class="container">
+        <h2 class="animate-on-scroll">Our Ethos</h2>
+        <div class="our-ethos-grid">
+          <div class="our-ethos-item animate-on-scroll slide-in-left">
+            <div class="our-ethos-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Client-Centric Approach</h3>
+            <p>
+              Our clients are at the heart of everything we do. We listen
+              attentively to their needs and aspirations, providing personalized
+              solutions.
+            </p>
+          </div>
+
+          <div class="our-ethos-item animate-on-scroll slide-in-up">
+            <div class="our-ethos-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Integrity & Transparency</h3>
+            <p>
+              We conduct our business with the utmost honesty and transparency.
+              We believe trust is paramount in every client relationship.
+            </p>
+          </div>
+
+          <div class="our-ethos-item animate-on-scroll slide-in-right">
+            <div class="our-ethos-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Expertise and Innovation</h3>
+            <p>
+              We are dedicated to staying at the forefront of the real estate
+              market, combining expertise and innovation to identify promising
+              investments.
+            </p>
+          </div>
+
+          <div class="our-ethos-item animate-on-scroll slide-in-left delay-1">
+            <div class="our-ethos-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Excellence in Service</h3>
+            <p>
+              We are committed to delivering excellence in every service we
+              provide, aiming to exceed our clients' expectations.
+            </p>
+          </div>
+
+          <div class="our-ethos-item animate-on-scroll slide-in-up delay-1">
+            <div class="our-ethos-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Investment Intelligence</h3>
+            <p>
+              We are driven by a passion for investment intelligence,
+              continuously researching and analyzing market trends.
+            </p>
+          </div>
+
+          <div class="our-ethos-item animate-on-scroll slide-in-right delay-1">
+            <div class="our-ethos-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Partnership and Collaboration</h3>
+            <p>
+              We believe in building long-term partnerships with our clients,
+              ensuring everyone receives our collective expertise.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta section -->
+    <!-- cta section -->
+    <section class="cta-section">
+      <div class="cta-container">
+        <div class="cta-section-header animate-on-scroll">
+          <h2>Ready to Find Your Ideal Property?</h2>
+          <p>
+            Our experienced team at BlueBrick Real Estate is ready to guide you
+            through every step of your property journey
+          </p>
+        </div>
+
+        <div class="cta-content">
+          <!-- Contact Form -->
+          <div class="cta-contact-form">
+            <h3 class="animate-on-scroll slide-in-left">
+              Get Property Consultation
+            </h3>
+            <form id="ctaForm">
+              <div
+                class="cta-form-group animate-on-scroll slide-in-left delay-1"
+              >
+                <label for="user_name">First Name</label>
+                <input
+                  type="text"
+                  name="user_name"
+                  placeholder="Enter your first name"
+                  required
+                />
+              </div>
+
+              <div
+                class="cta-form-group animate-on-scroll slide-in-left delay-2"
+              >
+                <label for="user_email">Email</label>
+                <input
+                  type="email"
+                  name="user_email"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+
+              <div
+                class="cta-form-group animate-on-scroll slide-in-left delay-3"
+              >
+                <label for="user_phone">Phone Number</label>
+                <input
+                  type="tel"
+                  name="user_phone"
+                  id="phone"
+                  placeholder="Enter phone number"
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="cta-submit-btn animate-on-scroll slide-in-left delay-4"
+              >
+                Send Inquiry
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="cta-contact-info animate-on-scroll slide-in-right">
+            <div class="cta-contact-methods">
+              <div
+                class="cta-contact-method animate-on-scroll slide-in-right delay-1"
+              >
+                <div class="cta-contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="cta-contact-details">
+                  <h4>Call Us</h4>
+                  <p>+971 4 123 4567</p>
+                </div>
+              </div>
+
+              <div
+                class="cta-contact-method animate-on-scroll slide-in-right delay-2"
+              >
+                <div class="cta-contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="cta-contact-details">
+                  <h4>Email Us</h4>
+                  <p>info@bluebrickrealestate.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="cta-why-choose animate-on-scroll slide-in-right delay-3"
+            >
+              <h4>Why Choose BlueBrick Real Estate?</h4>
+              <ul>
+                <li>Extensive experience in property consulting</li>
+                <li>Trusted by hundreds of satisfied clients</li>
+                <li>Exclusive residential and commercial listings</li>
+                <li>Complete property buying and selling support</li>
+                <li>Dedicated team of real estate professionals</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3>BlueBrick Real Estate</h3>
+            <p>
+              Professional real estate company offering trusted property
+              solutions and quality homes in prime locations.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <!-- <li><a href="">Properties</a></li> -->
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>OFFICE</h3>
+            <ul class="footer-links">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Suite 502, The Opus by
+                Omniyat, Al A'amal St, Business Bay, Dubai, UAE
+              </li>
+              <li><i class="fas fa-phone"></i> +971 99 000 xxxx</li>
+              <li>
+                <i class="fas fa-envelope"></i> info@bluebrickrealestate.com
+              </li>
+              <li><i class="fas fa-clock"></i> Mon-Fri: 9am - 5pm</li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Stay in Touch</h3>
+            <p>Connect with us on social media</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 BlueBrick Real Estate. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="about.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

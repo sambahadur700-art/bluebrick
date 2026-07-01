@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlueBrick Real Estate</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="logo">
+        <img src="assets/logo01.png" alt="logo image" />
+      </div>
+
+      <button
+        class="nav-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" role="menubar">
+        <li class="nav-item" role="none">
+          <a href="index.html" class="nav-link" role="menuitem">HOME</a>
+        </li>
+        <li class="nav-item" role="none">
+          <a href="about.html" class="nav-link" role="menuitem">ABOUT US</a>
+        </li>
+        <li class="nav-item" role="none">
+          <a
+            href="#"
+            class="nav-link has-dropdown"
+            role="menuitem"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            SERVICES
+            <button
+              class="dropdown-btn"
+              aria-label="Toggle Off Plan Projects submenu"
+            >
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </a>
+          <div class="dropdown" role="menu">
+            <a
+              href="dynamicproperties-type02.html?type=sale"
+              class="dropdown-item"
+              role="menuitem"
+              >FOR SALE</a
+            >
+            <a
+              href="dynamicproperties-type02.html?type=rent"
+              class="dropdown-item"
+              role="menuitem"
+              >FOR RENT</a
+            >
+            <a
+              href="dynamicproperties-type02.html?type=offplan"
+              class="dropdown-item"
+              role="menuitem"
+              >OFF PLAN</a
+            >
+          </div>
+        </li>
+        <li class="nav-item" role="none">
+          <a
+            href="#"
+            class="nav-link has-dropdown"
+            role="menuitem"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            DEVELOPER
+            <button class="dropdown-btn" aria-label="Toggle Developer submenu">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </a>
+          <div class="dropdown" role="menu">
+            <a
+              href="dynamic-developers.html?developer=emaar"
+              class="dropdown-item"
+              >EMAAR PROPERTIES</a
+            >
+            <a
+              href="dynamic-developers.html?developer=damac"
+              class="dropdown-item"
+              >DAMAC PROPERTIES</a
+            >
+            <a
+              href="dynamic-developers.html?developer=nakheel"
+              class="dropdown-item"
+              >NAKHEEL PROPERTIES</a
+            >
+            <a
+              href="dynamic-developers.html?developer=ellington"
+              class="dropdown-item"
+              >ELLINGTON PROPERTIES</a
+            >
+            <a
+              href="dynamic-developers.html?developer=meraas"
+              class="dropdown-item"
+              >MERAAS</a
+            >
+          </div>
+        </li>
+        <li class="nav-item" role="none">
+          <a href="contact.html" class="nav-link" role="menuitem">CONTACT</a>
+        </li>
+        <li class="nav-item" role="none">
+          <a
+            href="#"
+            class="nav-link schedule"
+            id="demoTriggerBtn"
+            role="menuitem"
+            >SCHEDULE A VISIT</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- cta section -->
+    <section class="cta-section">
+      <div class="cta-container">
+        <div class="cta-section-header animate-on-scroll">
+          <h2>Ready to Find Your Ideal Property?</h2>
+          <p>
+            Our experienced team at BlueBrick Real Estate is ready to guide you
+            through every step of your property journey
+          </p>
+        </div>
+
+        <div class="cta-content">
+          <!-- Contact Form -->
+          <div class="cta-contact-form">
+            <h3 class="animate-on-scroll slide-in-left">
+              Get Property Consultation
+            </h3>
+            <form id="ctaForm">
+              <div
+                class="cta-form-group animate-on-scroll slide-in-left delay-1"
+              >
+                <label for="user_name">First Name</label>
+                <input
+                  type="text"
+                  name="user_name"
+                  placeholder="Enter your first name"
+                  required
+                />
+              </div>
+
+              <div
+                class="cta-form-group animate-on-scroll slide-in-left delay-2"
+              >
+                <label for="user_email">Email</label>
+                <input
+                  type="email"
+                  name="user_email"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+
+              <div
+                class="cta-form-group animate-on-scroll slide-in-left delay-3"
+              >
+                <label for="user_phone">Phone Number</label>
+                <input
+                  type="tel"
+                  name="user_phone"
+                  id="phone"
+                  placeholder="Enter phone number"
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="cta-submit-btn animate-on-scroll slide-in-left delay-4"
+              >
+                Send Inquiry
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="cta-contact-info animate-on-scroll slide-in-right">
+            <div class="cta-contact-methods">
+              <div
+                class="cta-contact-method animate-on-scroll slide-in-right delay-1"
+              >
+                <div class="cta-contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="cta-contact-details">
+                  <h4>Call Us</h4>
+                  <p>+971 4 123 4567</p>
+                </div>
+              </div>
+
+              <div
+                class="cta-contact-method animate-on-scroll slide-in-right delay-2"
+              >
+                <div class="cta-contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="cta-contact-details">
+                  <h4>Email Us</h4>
+                  <p>info@bluebrickrealestate.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="cta-why-choose animate-on-scroll slide-in-right delay-3"
+            >
+              <h4>Why Choose BlueBrick Real Estate?</h4>
+              <ul>
+                <li>Extensive experience in property consulting</li>
+                <li>Trusted by hundreds of satisfied clients</li>
+                <li>Exclusive residential and commercial listings</li>
+                <li>Complete property buying and selling support</li>
+                <li>Dedicated team of real estate professionals</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+
+    <div class="faq-container">
+      <div class="faq-section">
+        <div class="faq-header animate-on-scroll slide-in-left delay-1">
+          <div class="faq-label">FAQS</div>
+          <h1 class="faq-title">Frequently asked<br />questions</h1>
+        </div>
+
+        <div class="faq-content">
+          <div class="faq-list animate-on-scroll slide-in-right">
+            <!-- Default 4 FAQs -->
+            <div class="faq-item animate-on-scroll slide-in-right">
+              <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                  How can I start buying a property with BlueBrick Real Estate?
+                </div>
+                <div class="faq-icon"></div>
+              </div>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  Getting started is simple. Contact our team through the
+                  website or phone to schedule a consultation. We will discuss
+                  your property needs, preferred location, and budget to help
+                  you explore the most suitable homes or investment
+                  opportunities.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item animate-on-scroll slide-in-right delay-1">
+              <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                  What services does BlueBrick Real Estate provide?
+                </div>
+                <div class="faq-icon"></div>
+              </div>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  Our services include property buying and selling assistance,
+                  real estate investment guidance, property consultations,
+                  residential and commercial listings, and complete support
+                  throughout the purchase process.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item animate-on-scroll slide-in-right delay-2">
+              <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                  How long does it take to complete a property purchase?
+                </div>
+                <div class="faq-icon"></div>
+              </div>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  The timeline depends on the property type, documentation, and
+                  payment process. Typically, a property transaction can take a
+                  few weeks to complete once all legal and financial steps are
+                  finalized.
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item animate-on-scroll slide-in-right delay-3">
+              <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                  Do you help with property investment decisions?
+                </div>
+                <div class="faq-icon"></div>
+              </div>
+              <div class="faq-answer">
+                <div class="faq-answer-content">
+                  Yes, our team provides expert market insights and investment
+                  advice to help you choose properties with strong growth
+                  potential and long-term value.
+                </div>
+              </div>
+            </div>
+
+            <!-- Hidden FAQs -->
+            <div class="hidden-faqs" id="hiddenFAQs">
+              <div class="faq-item animate-on-scroll slide-in-right delay-1">
+                <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                  <div class="faq-question">
+                    Do you offer both residential and commercial properties?
+                  </div>
+                  <div class="faq-icon"></div>
+                </div>
+                <div class="faq-answer">
+                  <div class="faq-answer-content">
+                    Yes, we offer a wide range of residential homes, apartments,
+                    villas, and commercial properties suitable for businesses
+                    and investors.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item animate-on-scroll slide-in-right delay-1">
+                <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                  <div class="faq-question">
+                    Can you help first-time property buyers?
+                  </div>
+                  <div class="faq-icon"></div>
+                </div>
+                <div class="faq-answer">
+                  <div class="faq-answer-content">
+                    Absolutely. Our experts guide first-time buyers through
+                    every step, including property selection, legal
+                    documentation, and financing options.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item animate-on-scroll slide-in-right delay-1">
+                <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                  <div class="faq-question">
+                    Do you provide property consultations?
+                  </div>
+                  <div class="faq-icon"></div>
+                </div>
+                <div class="faq-answer">
+                  <div class="faq-answer-content">
+                    Yes, we offer professional consultations to help clients
+                    understand market trends, property values, and the best
+                    investment opportunities.
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item animate-on-scroll slide-in-right delay-1">
+                <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                  <div class="faq-question">
+                    How can I schedule a property viewing?
+                  </div>
+                  <div class="faq-icon"></div>
+                </div>
+                <div class="faq-answer">
+                  <div class="faq-answer-content">
+                    You can schedule a viewing by contacting our team directly
+                    or filling out the inquiry form on the website. Our agents
+                    will arrange a convenient time for your visit.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="show-more-btn animate-on-scroll slide-in-right delay-2"
+              id="showMoreBtn"
+              onclick="toggleMoreFAQs()"
+            >
+              Show More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3>BlueBrick Real Estate</h3>
+            <p>
+              Professional real estate company offering trusted property
+              solutions and quality homes in prime locations.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <!-- <li><a href="">Properties</a></li> -->
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>OFFICE</h3>
+            <ul class="footer-links">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Suite 502, The Opus by
+                Omniyat, Al A'amal St, Business Bay, Dubai, UAE
+              </li>
+              <li><i class="fas fa-phone"></i> +971 99 000 xxxx</li>
+              <li>
+                <i class="fas fa-envelope"></i> info@bluebrickrealestate.com
+              </li>
+              <li><i class="fas fa-clock"></i> Mon-Fri: 9am - 5pm</li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Stay in Touch</h3>
+            <p>Connect with us on social media</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 BlueBrick Real Estate. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="index.js"></script>
+    <script src="about.js"></script>
+  </body>
+</html>

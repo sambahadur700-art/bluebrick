@@ -1,0 +1,588 @@
+/* Hero Section */
+.about-top {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.079), rgba(0, 0, 0, 0.178)),
+    url("assets/hero_bg_05.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 15rem;
+  color: white;
+  position: relative;
+}
+.rent-top {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.079), rgba(0, 0, 0, 0.178)),
+    url("assets/bg_img_01.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 15rem;
+  color: white;
+  position: relative;
+}
+.sale-top {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.079), rgba(0, 0, 0, 0.178)),
+    url("assets/dark_bg_img_03.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 15rem;
+  color: white;
+  position: relative;
+}
+.offplan-top {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.079), rgba(0, 0, 0, 0.178)),
+    url("assets/bg_img_05.png") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 15rem;
+  color: white;
+  position: relative;
+}
+.about-top-content {
+  max-width: 800px;
+  padding: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-top h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 5.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 900;
+}
+
+.about-top p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: #d4af37;
+    color: white;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #c19d34;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+} */
+
+/* Section Styles */
+section {
+  padding: 100px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 50px;
+  /* color: #000; */
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  /* color: #000; */
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+  /* color: #000; */
+}
+
+/* About Us Section */
+.about-us {
+  background: white;
+}
+
+.about-us-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-us-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-us-image {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-us-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Our Ethos Section */
+.our-ethos {
+  background: #f8f9fa;
+}
+
+.our-ethos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.our-ethos-item {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.our-ethos-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(52, 152, 219, 0.2);
+}
+
+.our-ethos-icon {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.our-ethos-item:hover .our-ethos-icon {
+  transform: scale(1.2);
+}
+
+/* Our Mission Section */
+.our-mission {
+  background: white;
+}
+
+.our-mission-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.our-mission-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.our-mission-image {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.our-mission-image:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(52, 152, 219, 0.2);
+}
+
+.our-mission-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.our-mission-image:hover img {
+  transform: scale(1.05);
+}
+
+.our-mission-box {
+  background: #f8f9fa;
+  padding: 40px;
+  border-left: 4px solid var(--accent);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+}
+
+.our-mission-box:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(52, 152, 219, 0.2);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  position: relative;
+  color: white;
+  padding: 80px 0;
+
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  background-image: url("assets/dubai-marina.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.why-choose-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(22, 24, 26, 0.85) 0%,
+    rgba(20, 23, 25, 0.85) 100%
+  );
+  z-index: 0;
+}
+
+.why-choose-us h2 {
+  color: white;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.features-grid h3 {
+  line-height: 40px;
+}
+
+.feature-item {
+  background: white;
+  color: #000;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  /* background: rgba(212, 175, 55, 0.2); */
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover .feature-icon {
+  transform: rotate(10deg) scale(1.2);
+}
+
+/* Our Team Section */
+.our-team {
+  background: white;
+}
+
+.our-team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.our-team-member {
+  text-align: center;
+  padding: 30px 20px;
+  background: #f8f9fa;
+  border-radius: 5px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.our-team-member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.our-team-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  border: 3px solid var(--accent);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.our-team-member:hover .our-team-img {
+  transform: scale(1.1);
+  border-color: #2c3e50;
+}
+
+.our-team-name {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.our-team-role {
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.top-path {
+  font-size: 30px;
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--accent),
+    transparent
+  );
+  margin: 40px 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .about-us-content,
+  .our-mission-content {
+    flex-direction: column;
+  }
+
+  .about-us-image,
+  .our-mission-image {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-top {
+    font-size: 1.5rem;
+  }
+  .about-top h1 {
+    font-size: 2.5rem;
+  }
+  section {
+    padding: 80px 20px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+  .top-path {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .about-top .sale-top .offplan-top .rent-top {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-topo {
+    font-size: 1.25rem;
+  }
+  .about-top .sale-top .offplan-top .rent-top {
+    height: 100vh;
+  }
+  .about-top h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 12px 25px;
+  }
+
+  .our-mission-box {
+    padding: 20px;
+  }
+
+  .our-ethos-item,
+  .feature-item,
+  .our-team-member {
+    padding: 20px 15px;
+  }
+
+  .our-ethos-icon,
+  .feature-icon {
+    font-size: 2rem;
+  }
+  .top-path {
+    font-size: 20px;
+  }
+}
+
+/* Animation keyframes */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation classes */
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-300px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(300px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.slide-in-up {
+  opacity: 0;
+  transform: translateY(150px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.slide-in-left.animate,
+.slide-in-right.animate,
+.slide-in-up.animate {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* Delay classes for staggered animations */
+.delay-1 {
+  transition-delay: 0.2s;
+}
+.delay-2 {
+  transition-delay: 0.2s;
+}
+.delay-3 {
+  transition-delay: 0.2s;
+}
+.delay-4 {
+  transition-delay: 0.2s;
+}
+.delay-5 {
+  transition-delay: 1s;
+}

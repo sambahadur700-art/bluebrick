@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Luxury Marina View - Dubai Properties</title>
+    <link rel="stylesheet" href="property-detail02.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="logo">
+        <img src="assets/logo01.png" alt="logo image" />
+      </div>
+
+      <button
+        class="nav-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-menu" role="menubar">
+        <li class="nav-item" role="none">
+          <a href="index.html" class="nav-link" role="menuitem">HOME</a>
+        </li>
+        <li class="nav-item" role="none">
+          <a href="about.html" class="nav-link" role="menuitem">ABOUT US</a>
+        </li>
+        <li class="nav-item" role="none">
+          <a
+            href="#"
+            class="nav-link has-dropdown"
+            role="menuitem"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            SERVICES
+            <button
+              class="dropdown-btn"
+              aria-label="Toggle Off Plan Projects submenu"
+            >
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </a>
+          <div class="dropdown" role="menu">
+            <a
+              href="dynamicproperties-type02.html?type=sale"
+              class="dropdown-item"
+              role="menuitem"
+              >FOR SALE</a
+            >
+            <a
+              href="dynamicproperties-type02.html?type=rent"
+              class="dropdown-item"
+              role="menuitem"
+              >FOR RENT</a
+            >
+            <a
+              href="dynamicproperties-type02.html?type=offplan"
+              class="dropdown-item"
+              role="menuitem"
+              >OFF PLAN</a
+            >
+          </div>
+        </li>
+        <li class="nav-item" role="none">
+          <a
+            href="#"
+            class="nav-link has-dropdown"
+            role="menuitem"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            DEVELOPER
+            <button class="dropdown-btn" aria-label="Toggle Developer submenu">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </a>
+          <div class="dropdown" role="menu">
+            <a href="emaarproperties.html" class="dropdown-item" role="menuitem"
+              >EMAAR PROPERTIES
+            </a>
+            <a
+              href="nakheel-properties.html"
+              class="dropdown-item"
+              role="menuitem"
+              >NAKHEEL PROPERTIES</a
+            >
+            <a
+              href="demac-properties.html"
+              class="dropdown-item"
+              role="menuitem"
+              >DAMAC PROPERTIES</a
+            >
+            <a
+              href="ellington-properties.html"
+              class="dropdown-item"
+              role="menuitem"
+              >ELLINGTON PROPERTIES</a
+            >
+            <a
+              href="meraas-properties.html"
+              class="dropdown-item"
+              role="menuitem"
+              >MERAAS</a
+            >
+          </div>
+        </li>
+        <li class="nav-item" role="none">
+          <a href="contact.html" class="nav-link" role="menuitem">CONTACT</a>
+        </li>
+        <li class="nav-item" role="none">
+          <a
+            href="#"
+            class="nav-link schedule"
+            id="demoTriggerBtn"
+            role="menuitem"
+            >SCHEDULE A VISIT</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="modal-overlay" id="contactModal">
+      <div class="contact-modal">
+        <button class="close-modal" id="closeModal">&times;</button>
+        <div class="modal-header">
+          <h2>Contact Us</h2>
+          <p>Fill out the form below and we'll get back to you shortly</p>
+        </div>
+
+        <form id="modalContactForm" class="modal-form">
+          <div class="form-group">
+            <label for="modal-name">Full Name</label>
+            <input
+              type="text"
+              id="modal-name"
+              name="user_name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="modal-email">Email Address</label>
+            <input
+              type="email"
+              id="modal-email"
+              name="user_email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="modal-phone">Phone Number</label>
+            <input
+              type="tel"
+              id="modal-phone"
+              name="user_phone"
+              placeholder="Enter phone number"
+              required
+            />
+          </div>
+
+          <button type="submit" class="submit-btn" id="modalSubmitBtn">
+            Send Message
+          </button>
+
+          <div class="form-message" id="modalFormMessage"></div>
+        </form>
+      </div>
+    </div>
+
+    <div id="property-content"></div>
+
+    <!-- cta section -->
+    <section class="cta-section">
+      <div class="cta-container">
+        <div class="cta-section-header animate-on-scroll">
+          <h2>Ready to Find Your Ideal Property?</h2>
+          <p>
+            Our experienced team at BlueBrick Real Estate is ready to guide you
+            through every step of your property journey
+          </p>
+        </div>
+
+        <div class="cta-content">
+          <!-- Contact Form -->
+          <div class="cta-contact-form">
+            <h3 class="animate-on-scroll slide-in-left">
+              Get Property Consultation
+            </h3>
+            <form id="ctaForm">
+              <div
+                class="cta-form-group animate-on-scroll slide-in-left delay-1"
+              >
+                <label for="user_name">First Name</label>
+                <input
+                  type="text"
+                  name="user_name"
+                  placeholder="Enter your first name"
+                  required
+                />
+              </div>
+
+              <div
+                class="cta-form-group animate-on-scroll slide-in-left delay-2"
+              >
+                <label for="user_email">Email</label>
+                <input
+                  type="email"
+                  name="user_email"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+
+              <div
+                class="cta-form-group animate-on-scroll slide-in-left delay-3"
+              >
+                <label for="user_phone">Phone Number</label>
+                <input
+                  type="tel"
+                  name="user_phone"
+                  id="phone"
+                  placeholder="Enter phone number"
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="cta-submit-btn animate-on-scroll slide-in-left delay-4"
+              >
+                Send Inquiry
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="cta-contact-info animate-on-scroll slide-in-right">
+            <div class="cta-contact-methods">
+              <div
+                class="cta-contact-method animate-on-scroll slide-in-right delay-1"
+              >
+                <div class="cta-contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="cta-contact-details">
+                  <h4>Call Us</h4>
+                  <p>+971 4 123 4567</p>
+                </div>
+              </div>
+
+              <div
+                class="cta-contact-method animate-on-scroll slide-in-right delay-2"
+              >
+                <div class="cta-contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="cta-contact-details">
+                  <h4>Email Us</h4>
+                  <p>info@bluebrickrealestate.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="cta-why-choose animate-on-scroll slide-in-right delay-3"
+            >
+              <h4>Why Choose BlueBrick Real Estate?</h4>
+              <ul>
+                <li>Extensive experience in property consulting</li>
+                <li>Trusted by hundreds of satisfied clients</li>
+                <li>Exclusive residential and commercial listings</li>
+                <li>Complete property buying and selling support</li>
+                <li>Dedicated team of real estate professionals</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3>BlueBrick Real Estate</h3>
+            <p>
+              Professional real estate company offering trusted property
+              solutions and quality homes in prime locations.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <!-- <li><a href="">Properties</a></li> -->
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>OFFICE</h3>
+            <ul class="footer-links">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Suite 502, The Opus by
+                Omniyat, Al A'amal St, Business Bay, Dubai, UAE
+              </li>
+              <li><i class="fas fa-phone"></i> +971 99 000 xxxx</li>
+              <li>
+                <i class="fas fa-envelope"></i> info@bluebrickrealestate.com
+              </li>
+              <li><i class="fas fa-clock"></i> Mon-Fri: 9am - 5pm</li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Stay in Touch</h3>
+            <p>Connect with us on social media</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 BlueBrick Real Estate. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="dynamic-properties02.js"></script>
+    <script src="index.js"></script>
+    <script src="about.js"></script>
+  </body>
+</html>

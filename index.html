@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueBrick Real Estate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="logo">
+            <img src="assets/logo01.png" alt="logo image">
+        </div>
+        
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <ul class="nav-menu" role="menubar">
+            <li class="nav-item" role="none">
+                <a href="index.html" class="nav-link" role="menuitem">HOME</a>
+            </li>
+            <li class="nav-item" role="none">
+                <a href="about.html" class="nav-link" role="menuitem">ABOUT US</a>
+            </li>
+            <li class="nav-item" role="none">
+                <a href="#" class="nav-link has-dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                    SERVICES
+                    <button class="dropdown-btn" aria-label="Toggle Off Plan Projects submenu">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </a>
+                <div class="dropdown" role="menu">
+                <a href="dynamicproperties-type02.html?type=sale" class="dropdown-item" role="menuitem">FOR SALE</a>
+                <a href="dynamicproperties-type02.html?type=rent" class="dropdown-item" role="menuitem">FOR RENT</a>
+                <a href="dynamicproperties-type02.html?type=offplan" class="dropdown-item" role="menuitem">OFF PLAN</a>
+            </div>
+            </li>
+            <li class="nav-item" role="none">
+                <a href="#" class="nav-link has-dropdown" role="menuitem" aria-haspopup="true" aria-expanded="false">
+                    DEVELOPER 
+                    <button class="dropdown-btn" aria-label="Toggle Developer submenu">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </a>
+                <div class="dropdown" role="menu">
+    <a href="dynamic-developers.html?developer=emaar" class="dropdown-item">EMAAR PROPERTIES</a>
+    <a href="dynamic-developers.html?developer=damac" class="dropdown-item">DAMAC PROPERTIES</a>
+    <a href="dynamic-developers.html?developer=nakheel" class="dropdown-item">NAKHEEL PROPERTIES</a>
+    <a href="dynamic-developers.html?developer=ellington" class="dropdown-item">ELLINGTON PROPERTIES</a>
+    <a href="dynamic-developers.html?developer=meraas" class="dropdown-item">MERAAS</a>
+</div>
+            </li>
+            <li class="nav-item" role="none">
+                <a href="contact.html" class="nav-link" role="menuitem">CONTACT</a>
+            </li>
+            <li class="nav-item" role="none">
+                <a href="#" class="nav-link schedule" id="demoTriggerBtn" role="menuitem">SCHEDULE A VISIT</a>
+            </li>
+        </ul>
+    </nav>
+
+
+     <!-- Hero Section with Fade Transitions -->
+    <section class="hero">
+        <div class="hero-slides ">
+            <!-- Slide 1 -->
+                 <div class="hero-slide active  " style="background-image: url('assets/hero_bg_01.webp')">
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="slide-content ">
+                    <p class="slide-in-left delay">Trusted Guidance for Buying and Investing in Property.</p>
+                    <h1 class="slide-in-left  delay-2">DISCOVER QUALITY HOMES WITH BLUEBRICK REAL ESTATE</h1>                   
+                    <a href="#properties" class="btn slide-in-left delay-3">VIEW PROPERTIES</a>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+                <div class="overlay"></div> 
+                <div class="hero-slide " style="background-image: url('assets/hero_bg_03.webp')">
+                <div class="overlay"></div>
+                <div class="slide-content">
+                    <p class="slide-in-left delay-1">Carefully Selected Homes in Prime Locations.</p>
+                    <h1 class="slide-in-left delay-2">FIND YOUR PERFECT HOME WITH CONFIDENCE</h1>
+                    <a href="#properties" class="btn slide-in-left delay-3">VIEW PROPERTIES</a>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+
+                 <div class="hero-slide " style="background-image: url('assets/hero_bg_02.webp')">
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="slide-content">
+                    <p class="slide-in-left delay-1">Modern Living Spaces Designed for Comfort.</p>
+                    <h1 class="slide-in-left delay-2">WHERE COMFORT AND STYLE COME TOGETHER</h1>
+                    <a href="#properties" class="btn slide-in-left delay-3">VIEW PROPERTIES</a>
+                </div>
+            </div>
+            
+            <!-- Slide 4 -->
+                          <div class="hero-slide " style="background-image: url('assets/hero_bg_04.webp')">
+                <div class="overlay"></div>
+                <div class="overlay"></div>
+                <div class="slide-content">
+                    <p class="slide-in-left delay-1">Helping You Buy, Sell, and Invest in Real Estate.</p>
+                    <h1 class="slide-in-left delay-2">EXPLORE THE BEST PROPERTY OPPORTUNITIES</h1>
+                    <a href="#properties" class="btn slide-in-left delay-3">VIEW PROPERTIES</a>
+                </div>
+            </div>
+        </div>
+
+    
+        
+        <!-- Hero Navigation with Numbers -->
+        <div class="hero-nav">
+            <div class="hero-nav-item active" data-slide="0"></div>
+            <div class="hero-nav-item" data-slide="1"></div>
+            <div class="hero-nav-item" data-slide="2"></div>
+            <div class="hero-nav-item" data-slide="3"></div>
+        </div>
+    </section>
+        <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <!-- <div class="section-title " > -->
+            <div class="section-title animate-on-scroll" >
+                <h2 class="animate-on-scroll">About BlueBrick Real Estate</h2>
+                <p class="animate-on-scroll">Delivering trusted real estate solutions</p>
+            </div>
+            
+            <div class="about-content ">
+                <div class="about-text animate-on-scroll slide-in-left ">
+                    <h2 class="animate-on-scroll">We Provide Reliable Property Solutions</h2>
+                    <p class="animate-on-scroll">BlueBrick Real Estate is a professional real estate company focused on residential and commercial properties in prime locations. With strong market insight and years of experience, we help clients discover the right property opportunities.</p>
+                    <p class="animate-on-scroll">Our experienced team is dedicated to providing transparent guidance and dependable service, ensuring buyers, sellers, and investors achieve their real estate goals with confidence.</p>
+                    
+                </div>
+                
+                <div class="about-image animate-on-scroll slide-in-right ">
+                    <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="About Us">
+                </div>
+            <!-- </div> -->
+        </div>
+    </section>
+    <!-- stat section -->
+
+<div class="container">
+
+        <div class="stats-grid animate-on-scroll ">
+            <div class="stat-card animate-on-scroll slide-in-up" style="animation-delay: 0.1s;">
+                <div class="stat-icon">
+                    <span class="stat-number">10+</span>
+                </div>
+                <h3 class="stat-title">Years of Experience</h3>                
+            </div>
+
+            <div class="stat-card animate-on-scroll slide-in-up delay-1" style="animation-delay: 0.2s;">
+                <div class="stat-icon">
+                    <span class="stat-number">850+</span>
+                </div>
+                <h3 class="stat-title">Successful Property Deals</h3>                
+            </div>
+
+            <div class="stat-card animate-on-scroll slide-in-up delay-2" style="animation-delay: 0.3s;">
+                <div class="stat-icon">
+                    <span class="stat-number">120+</span>
+                </div>
+                <h3 class="stat-title">Real Estate Experts</h3>               
+            </div>
+
+            <div class="stat-card animate-on-scroll slide-in-up delay-3" style="animation-delay: 0.4s;">
+                <div class="stat-icon">
+                    <span class="stat-number">600+</span>
+                </div>
+                <h3 class="stat-title">Happy Property Owners</h3>
+            </div>
+        </div>
+    </div>
+    <!-- dubai-scroller -->
+      <section class="dubai-scroller animate-on-scroll">
+    <div class="dubai-track">
+      <div class="dubai-slide">
+        <img src="assets/damaac.png" alt="Dubai Skyline">
+      </div>
+      <div class="dubai-slide">
+        <img src="assets/denube.png" alt="Palm Jumeirah">
+      </div>
+      <div class="dubai-slide">
+        <img src="assets/nakheel.png" alt="Downtown Dubai">
+      </div>
+      <div class="dubai-slide">
+        <img src="assets/emaar.png" alt="Dubai Marina">
+      </div>
+       <div class="dubai-slide">
+        <img src="assets/ellington.png" alt="Dubai Marina">
+      </div>
+       <div class="dubai-slide">
+        <img src="assets/meraas.png" alt="Dubai Marina">
+      </div>
+
+      <!-- Duplicate set -->
+        <div class="dubai-slide">
+        <img src="assets/damaac.png" alt="Dubai Skyline">
+      </div>
+      <div class="dubai-slide">
+        <img src="assets/denube.png" alt="Palm Jumeirah">
+      </div>
+      <div class="dubai-slide">
+        <img src="assets/nakheel.png" alt="Downtown Dubai">
+      </div>
+      <div class="dubai-slide">
+        <img src="assets/emaar.png" alt="Dubai Marina">
+      </div>
+       <div class="dubai-slide">
+        <img src="assets/ellington.png" alt="Dubai Marina">
+      </div>
+       <div class="dubai-slide">
+        <img src="assets/meraas.png" alt="Dubai Marina">
+      </div>
+     
+
+    </div>
+  </section>
+
+
+    <!-- Featured Properties with Filter -->
+    <section id="properties" class="featured-properties">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2 class="animate-on-scroll">Discover Our Premier Properties</h2>
+                <p class="animate-on-scroll">Discover our featured properties, carefully selected for their exceptional quality, prime locations, and outstanding investment potential in Dubai’s dynamic market.</p>
+            </div>
+            
+            <!-- Property Filter -->
+            <div class="property-filter animate-on-scroll">
+                <button class="filter-btn active" data-filter="sale">For Sale</button>
+                <button class="filter-btn" data-filter="rent">For Rent</button>
+                <button class="filter-btn" data-filter="offplan">Off-Plan</button>
+            </div>
+            
+            <!-- Property Items -->
+
+            <div class="property-items animate-on-scroll">
+    <!-- For Sale Properties -->
+    <div class="property-item active animate-on-scroll slide-in-left delay-1" data-category="sale">
+        <div class="property-card animate-on-scroll">
+            <div class="property-img">
+                <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716" alt="Palm Jumeirah Mansion">
+                <div class="property-overlay">
+                    <div class="property-price">AED 12,500,000</div>
+                </div>
+            </div>
+            <div class="property-details">
+                <h3>Palm Jumeirah Mansion</h3>
+                <div class="property-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Palm Jumeirah</span>
+                </div>
+                <div class="property-features">
+                    <div class="feature">
+                        <i class="fas fa-bed"></i>
+                        <span>6 Beds</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bath"></i>
+                        <span>5 Baths</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>5,500 sqft</span>
+                    </div>
+                </div>
+                <a href="dynamic-properties02.html?id=palm-jumeirah-mansion&category=sale" class="btn" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="property-item active animate-on-scroll slide-in-up delay-1" data-category="sale">
+        <div class="property-card">
+            <div class="property-img">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9" alt="Dubai Hills Estate">
+                <div class="property-overlay">
+                    <div class="property-price">AED 6,800,000</div>
+                </div>
+            </div>
+            <div class="property-details">
+                <h3>Dubai Hills Estate</h3>
+                <div class="property-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Dubai Hills</span>
+                </div>
+                <div class="property-features">
+                    <div class="feature">
+                        <i class="fas fa-bed"></i>
+                        <span>5 Beds</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bath"></i>
+                        <span>4 Baths</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>4,200 sqft</span>
+                    </div>
+                </div>
+                <a href="dynamic-properties02.html?id=dubai-hills-estate&category=sale" class="btn" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="property-item active animate-on-scroll slide-in-right delay-1" data-category="sale">
+        <div class="property-card animate-on-scroll">
+            <div class="property-img">
+                <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227" alt="Bluewaters Island Residence">
+                <div class="property-overlay">
+                    <div class="property-price">AED 9,200,000</div>
+                </div>
+            </div>
+            <div class="property-details">
+                <h3>Bluewaters Island Residence</h3>
+                <div class="property-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Bluewaters Island</span>
+                </div>
+                <div class="property-features">
+                    <div class="feature">
+                        <i class="fas fa-bed"></i>
+                        <span>4 Beds</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bath"></i>
+                        <span>4 Baths</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>3,200 sqft</span>
+                    </div>
+                </div>
+                <a href="dynamic-properties02.html?id=bluewaters-island-residence&category=sale" class="btn" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- For Rent Properties -->
+    <div class="property-item animate-on-scroll slide-in-left delay-1" data-category="rent">
+        <div class="property-card">
+            <div class="property-img">
+                <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267" alt="Business Bay Apartment">
+                <div class="property-overlay">
+                    <div class="property-price">AED 120,000/yr</div>
+                </div>
+            </div>
+            <div class="property-details">
+                <h3>Business Bay Apartment</h3>
+                <div class="property-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Business Bay, Dubai</span>
+                </div>
+                <div class="property-features">
+                    <div class="feature">
+                        <i class="fas fa-bed"></i>
+                        <span>2 Beds</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bath"></i>
+                        <span>2 Baths</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>1,350 sqft</span>
+                    </div>
+                </div>
+                <a href="dynamic-properties02.html?id=business-bay-apartment&category=rent" class="btn" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="property-item animate-on-scroll slide-in-up delay-1" data-category="rent">
+        <div class="property-card animate-on-scroll">
+            <div class="property-img">
+                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="Jumeirah Beach Villa">
+                <div class="property-overlay">
+                    <div class="property-price">AED 280,000/yr</div>
+                </div>
+            </div>
+            <div class="property-details">
+                <h3>Jumeirah Beach Villa</h3>
+                <div class="property-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Jumeirah, Dubai</span>
+                </div>
+                <div class="property-features">
+                    <div class="feature">
+                        <i class="fas fa-bed"></i>
+                        <span>4 Beds</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bath"></i>
+                        <span>4 Baths</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>3,800 sqft</span>
+                    </div>
+                </div>
+                <a href="dynamic-properties02.html?id=jumeirah-villa-rental&category=rent" class="btn" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="property-item animate-on-scroll slide-in-right delay-1" data-category="rent">
+        <div class="property-card animate-on-scroll">
+            <div class="property-img">
+                <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d" alt="Downtown Studio">
+                <div class="property-overlay">
+                    <div class="property-price">AED 65,000/yr</div>
+                </div>
+            </div>
+            <div class="property-details">
+                <h3>Downtown Studio</h3>
+                <div class="property-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Downtown Dubai</span>
+                </div>
+                <div class="property-features">
+                    <div class="feature">
+                        <i class="fas fa-bed"></i>
+                        <span>1 Bed</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bath"></i>
+                        <span>1 Bath</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>800 sqft</span>
+                    </div>
+                </div>
+                <a href="dynamic-properties02.html?id=downtown-studio-rent&category=rent" class="btn" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Off-Plan Properties -->
+    <div class="property-item" data-category="offplan">
+        <div class="property-card">
+            <div class="property-img">
+                <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914" alt="Creek Waters District">
+                <div class="property-overlay">
+                    <div class="property-price">From AED 1,800,000</div>
+                </div>
+            </div>
+            <div class="property-details">
+                <h3>Creek Waters District</h3>
+                <div class="property-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Dubai Creek</span>
+                </div>
+                <div class="property-features">
+                    <div class="feature">
+                        <i class="fas fa-bed"></i>
+                        <span>3-5 Beds</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bath"></i>
+                        <span>3-4 Baths</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>2,500-4,000 sqft</span>
+                    </div>
+                </div>
+                <a href="dynamic-properties02.html?id=creek-waters-district&category=offplan" class="btn" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="property-item" data-category="offplan">
+        <div class="property-card">
+            <div class="property-img">
+                <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811" alt="MBR City Villas">
+                <div class="property-overlay">
+                    <div class="property-price">From AED 2,500,000</div>
+                </div>
+            </div>
+            <div class="property-details">
+                <h3>MBR City Villas</h3>
+                <div class="property-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>MBR City</span>
+                </div>
+                <div class="property-features">
+                    <div class="feature">
+                        <i class="fas fa-bed"></i>
+                        <span>4-6 Beds</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bath"></i>
+                        <span>4-5 Baths</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>3,800-5,500 sqft</span>
+                    </div>
+                </div>
+                <a href="dynamic-properties02.html?id=mohammed-bin-rashid-city&category=offplan" class="btn" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="property-item" data-category="offplan">
+        <div class="property-card animate-on-scroll">
+            <div class="property-img">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9" alt="The Avalon Towers">
+                <div class="property-overlay">
+                    <div class="property-price">From AED 950,000</div>
+                </div>
+            </div>
+            <div class="property-details">
+                <h3>The Avalon Towers</h3>
+                <div class="property-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Jumeirah Village</span>
+                </div>
+                <div class="property-features">
+                    <div class="feature">
+                        <i class="fas fa-bed"></i>
+                        <span>1-3 Beds</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bath"></i>
+                        <span>1-2 Baths</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-ruler-combined"></i>
+                        <span>1,200-2,200 sqft</span>
+                    </div>
+                </div>
+                <a href="dynamic-properties02.html?id=the-avalon-towers&category=offplan" class="btn" style="width: 100%; text-align: center; margin-top: 15px;">View Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+            
+            <!-- Load More Button -->
+            <div class="load-more-container" style="text-align: center; margin-top: 40px;">
+                <button id="loadMoreBtn" class="btn">Load More</button>
+            </div>
+        </div>
+    </section>
+  
+   
+     <!-- Video Section -->
+    
+     <section class="video-section ">
+        <div class="video-background">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/881c6992-12aa-41fc-8ce0-8fe04f75e862.png" alt="Modern architectural real estate building with warm lighting at dusk, featuring contemporary design with large glass windows and wooden elements, surrounded by natural landscape" />
+        </div>
+        
+        <div class="grid-overlay"></div>
+        
+        <div class="video-content ">
+            <div class="video-tagline">BOOK A FREE PROPERTY CONSULTATION</div>
+            <h1 class="video-title">Find Your Ideal Property with BlueBrick Real Estate</h1>
+            <p class="video-description">
+                Our experienced team helps you explore premium residential and commercial properties, offering expert guidance to help you buy, sell, or invest with confidence.
+            </p>
+            <div class="yt-button-container">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="youtube-button" id="youtubeBtn">
+                    Watch Video
+                </a>
+            </div>
+        </div>
+    </section>
+    
+ 
+    <!-- Why Choose Us -->
+    <section class="why-section">
+      <div class="container">
+        <div class="why-header animate-on-scroll slide-in-left delay-1">
+           <h2>Complete Real Estate Services for Smart Property Decisions</h2>
+          <p class="animate-on-scroll">
+           BlueBrick Real Estate focuses on delivering reliable property solutions and outstanding service, built on trust, transparency, and strong client relationships.
+          </p>
+        </div>
+        <div class="why-features">
+          <div class="why-feature animate-on-scroll slide-in-left delay-1">
+            <div class="why-icon">
+              <i class="fas fa-chart-line" aria-hidden="true"></i>
+            </div>
+            <h3>Trusted Developer Partnerships</h3>
+            <p>We collaborate with well-known property developers to provide high-quality homes and investment opportunities in prime locations.</p>
+          </div>
+          <div class="why-feature animate-on-scroll slide-in-up delay-1">
+            <div class="why-icon">
+              <i class="fas fa-users" aria-hidden="true"></i>
+            </div>
+            <h3>Personalized Property Guidance</h3>
+            <p>Our team carefully understands your needs, lifestyle, and budget to recommend the most suitable properties and investment options.</p>
+          </div>
+          <div class="why-feature animate-on-scroll slide-in-right delay-1">
+            <div class="why-icon">
+              <i class="fas fa-home" aria-hidden="true"></i>
+            </div>
+            <h3>Diverse Property Options</h3>
+            <p>Explore a wide selection of apartments, villas, commercial spaces, and investment properties designed to match different lifestyles.</p>
+          </div>
+          <div class="why-feature animate-on-scroll slide-in-left delay-1">
+            <div class="why-icon">
+              <i class="fas fa-chart-line" aria-hidden="true"></i>
+            </div>
+            <h3>Transparent Transactions</h3>
+            <p>We maintain complete transparency in every step, ensuring clear communication and honest guidance for confident property decisions.</p>
+          </div>
+          <div class="why-feature animate-on-scroll slide-in-up delay-1">
+            <div class="why-icon">
+              <i class="fas fa-users" aria-hidden="true"></i>
+            </div>
+            <h3>Dedicated Client Support</h3>
+            <p>From property search to final purchase, our team provides professional assistance and continuous support throughout the entire process.</p>
+          </div>
+          <div class="why-feature animate-on-scroll slide-in-right delay-1">
+            <div class="why-icon">
+              <i class="fas fa-home" aria-hidden="true"></i>
+            </div>
+            <h3>Strong Market Insight</h3>
+            <p>Our real estate experts stay updated with market trends, property values, and investment opportunities to help clients make informed decisions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- deto section -->
+    <section class="deto-section" role="region" aria-label="Make right investment choices call to action">
+    <p class="deto-text-small animate-on-scroll">Let us help you</p>
+    <h1 class="deto-text-large animate-on-scroll">Make Right Investment Choices</h1>
+    <button class="deto-button animate-on-scroll" type="button" aria-label="Contact now for investment help" id="detoContactBtn">Contact Now</button>
+  </section>
+
+   <!-- Contact Modal -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="contact-modal">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="modal-header">
+                <h2>Contact Us</h2>
+                <p>Fill out the form below and we'll get back to you shortly</p>
+            </div>
+            
+            <form id="modalContactForm" class="modal-form">
+                <div class="form-group">
+                    <label for="modal-name">Full Name</label>
+                    <input type="text" id="modal-name" name="user_name" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="modal-email">Email Address</label>
+                    <input type="email" id="modal-email" name="user_email" placeholder="Enter your email address" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="modal-phone">Phone Number</label>
+                    <input type="tel" id="modal-phone" name="user_phone" placeholder="Enter phone number" required>
+                </div>
+                
+                
+                <button type="submit" class="submit-btn" id="modalSubmitBtn">Send Message</button>
+                
+                <div class="form-message" id="modalFormMessage"></div>
+            </form>
+        </div>
+    </div>
+
+
+<!-- why dubai section -->
+    <div class="dubai-properties-section">
+        <div class="dubai-section-header animate-on-scroll">
+            <h1 class="dubai-section-title">Why Invest in Real Estate?</h1>
+            <p class="dubai-section-subtitle">Discover strong property investment opportunities and long-term value</p>
+        </div>
+
+        <div class="dubai-gallery-container">
+            <div class="dubai-properties-scroll" id="dubaiPropertiesScroll">
+                <div class="dubai-property-card animate-on-scroll slide-in-up ">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d04ae0a0-c608-4963-83ca-867861192691.png" alt="Luxurious modern skyscraper with glass facades and panoramic city views in Dubai Marina at sunset with golden lighting reflecting off the building surfaces" class="dubai-loading" onload="this.classList.add('dubai-loaded')">
+                    <div class="dubai-property-overlay">
+                        <h2 class="dubai-property-title">STRONG RENTAL RETURNS</h2>
+                        <p class="dubai-property-description">Real estate investments can generate stable rental income and long-term financial growth.</p>
+                    </div>
+                </div>
+
+                <div class="dubai-property-card animate-on-scroll slide-in-up delay-1">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b7b19015-095a-4a77-9ebc-e0da8c9db5c4.png" alt="Elegant contemporary villa with infinity pool overlooking turquoise ocean waters and private beach in Malibu California during golden hour with palm trees" class="dubai-loading" onload="this.classList.add('dubai-loaded')">
+                    <div class="dubai-property-overlay">
+                        <h2 class="dubai-property-title">LONG-TERM INVESTMENT VALUE</h2>
+                        <p class="dubai-property-description">Property ownership offers long-term asset appreciation and reliable wealth building.</p>
+                    </div>
+                </div>
+
+                <div class="dubai-property-card animate-on-scroll slide-in-up delay-2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/13676053-2c1e-4d64-a671-ebe529424984.png" alt="Sophisticated urban penthouse with floor-to-ceiling windows overlooking Manhattan skyline at night with city lights twinkling and modern interior design visible" class="dubai-loading" onload="this.classList.add('dubai-loaded')">
+                    <div class="dubai-property-overlay">
+                        <h2 class="dubai-property-title">PREMIUM LIFESTYLE</h2>
+                        <p class="dubai-property-description">Modern homes and luxury residences offer comfort, convenience, and a high-quality lifestyle.</p>
+                    </div>
+                </div>
+
+                <div class="dubai-property-card animate-on-scroll">
+                      <img src="assets/healthcare.png" alt="healthcare img" class="dubai-loading" onload="this.classList.add('dubai-loaded')">
+                    <div class="dubai-property-overlay">
+                        <h2 class="dubai-property-title">QUALITY HEALTHCARE ACCESS</h2>
+                        <p class="dubai-property-description">Many residential communities are located near advanced healthcare facilities and services.</p>
+                    </div>
+                </div>
+
+                <div class="dubai-property-card animate-on-scroll">
+                     <img src="assets/education.png" alt="education image" class="dubai-loading" onload="this.classList.add('dubai-loaded')">
+                    <div class="dubai-property-overlay">
+                        <h2 class="dubai-property-title">TOP EDUCATION OPTIONS</h2>
+                        <p class="dubai-property-description">Residential areas are often close to quality schools and universities for families.</p>                        
+                    </div>
+                </div>
+
+                <div class="dubai-property-card animate-on-scroll">
+                     <img src="assets/entertainment.png" alt="entertainment img" class="dubai-loading" onload="this.classList.add('dubai-loaded')">
+                    <div class="dubai-property-overlay">
+                       <h2 class="dubai-property-title">VIBRANT LIFESTYLE</h2>
+                        <p class="dubai-property-description">Enjoy access to shopping, restaurants, parks, and entertainment near your property.</p>
+                    </div>
+                </div>
+
+                <div class="dubai-property-card animate-on-scroll">
+                    
+                    <img src="assets/carnibal_img.png " alt="carnibal_img" class="dubai-loading" onload="this.classList.add('dubai-loaded')">
+                    <div class="dubai-property-overlay">
+                        <h2 class="dubai-property-title">HIGH DEMAND LOCATIONS</h2>                      
+                        <p class="dubai-property-description">Properties in growing areas attract strong buyer interest and long-term demand.</p>                        
+                    </div>
+                </div>
+
+                <div class="dubai-property-card animate-on-scroll">
+                    
+                     <img src="assets/safety.png" alt="safety image" class="dubai-loading" onload="this.classList.add('dubai-loaded')">
+                    <div class="dubai-property-overlay">                      
+                        <h2 class="dubai-property-title">SAFE COMMUNITIES</h2>
+                        <p class="dubai-property-description">Modern residential developments prioritize safety, comfort, and well-planned community living.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dubai-scroll-hint">
+                Drag horizontally to explore more properties
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- testemonial section -->
+     <section class="testimonials-section" aria-label="Client Testimonials">
+    <div class="subheading" aria-hidden="true">Client Testimonials</div>
+    <h2 class="heading">What Our Clients Say</h2>
+    <p class="cta-text">Exceptional service that consistently exceeds expectations</p>
+
+    <div class="carousel" id="testimonial-carousel" aria-live="polite">
+        <div class="carousel-track" id="carousel-track">
+            <!-- Testimonials inserted by JS -->
+        </div>
+    </div>
+</section>
+
+    
+    <!-- FAQ Section -->
+    
+   <div class="faq-container">
+        <div class="faq-section">
+            <div class="faq-header animate-on-scroll slide-in-left delay-1">
+                <div class="faq-label">FAQS</div>
+                <h1 class="faq-title">Frequently asked<br>questions</h1>
+            </div>
+            
+            <div class="faq-content">
+                <div class="faq-list animate-on-scroll slide-in-right ">
+                    <!-- Default 4 FAQs -->
+                    <div class="faq-item animate-on-scroll slide-in-right">
+                        <div class="faq-question-wrapper " onclick="toggleFAQ(this)">
+                            <div class="faq-question">How can I start buying a property with BlueBrick Real Estate?</div>
+                            <div class="faq-icon"></div>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Getting started is simple. Contact our team through the website or phone to schedule a consultation. We will discuss your property needs, preferred location, and budget to help you explore the most suitable homes or investment opportunities.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll slide-in-right delay-1">
+                        <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                            <div class="faq-question">What services does BlueBrick Real Estate provide?</div>
+                            <div class="faq-icon"></div>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Our services include property buying and selling assistance, real estate investment guidance, property consultations, residential and commercial listings, and complete support throughout the purchase process.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll slide-in-right delay-2">
+                        <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                            <div class="faq-question">How long does it take to complete a property purchase?</div>
+                            <div class="faq-icon"></div>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                The timeline depends on the property type, documentation, and payment process. Typically, a property transaction can take a few weeks to complete once all legal and financial steps are finalized.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll slide-in-right delay-3">
+                        <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                            <div class="faq-question">Do you help with property investment decisions?</div>
+                            <div class="faq-icon"></div>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Yes, our team provides expert market insights and investment advice to help you choose properties with strong growth potential and long-term value.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hidden FAQs -->
+                    <div class="hidden-faqs" id="hiddenFAQs">
+                        <div class="faq-item animate-on-scroll slide-in-right delay-1">
+                            <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                                <div class="faq-question">Do you offer both residential and commercial properties?</div>
+                                <div class="faq-icon"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="faq-answer-content">
+                                    Yes, we offer a wide range of residential homes, apartments, villas, and commercial properties suitable for businesses and investors.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item animate-on-scroll slide-in-right delay-1">
+                            <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                                <div class="faq-question">Can you help first-time property buyers?</div>
+                                <div class="faq-icon"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="faq-answer-content">
+                                    Absolutely. Our experts guide first-time buyers through every step, including property selection, legal documentation, and financing options.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item animate-on-scroll slide-in-right delay-1">
+                            <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                                <div class="faq-question">Do you provide property consultations?</div>
+                                <div class="faq-icon"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="faq-answer-content">
+                                    Yes, we offer professional consultations to help clients understand market trends, property values, and the best investment opportunities.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item animate-on-scroll slide-in-right delay-1">
+                            <div class="faq-question-wrapper" onclick="toggleFAQ(this)">
+                                <div class="faq-question">How can I schedule a property viewing?</div>
+                                <div class="faq-icon"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <div class="faq-answer-content">
+                                    You can schedule a viewing by contacting our team directly or filling out the inquiry form on the website. Our agents will arrange a convenient time for your visit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="show-more-btn animate-on-scroll slide-in-right delay-2" id="showMoreBtn" onclick="toggleMoreFAQs()">
+                        Show More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- cta section -->
+<section class="cta-section">
+            <div class="cta-container">
+                <div class="cta-section-header animate-on-scroll">
+                    <h2>Ready to Find Your Ideal Property?</h2>
+                    <p>Our experienced team at BlueBrick Real Estate is ready to guide you through every step of your property journey</p>
+                </div>
+
+                <div class="cta-content">
+                  
+                    
+                     <!-- Contact Form -->
+                    <div class="cta-contact-form">
+                        <h3 class="animate-on-scroll slide-in-left">Get Property Consultation</h3>
+                        <form id="ctaForm">
+                            <div class="cta-form-group animate-on-scroll slide-in-left delay-1">
+                                <label for="user_name">First Name</label>
+                                <input type="text" name="user_name" placeholder="Enter your first name" required>
+                            </div>
+
+                            <div class="cta-form-group animate-on-scroll slide-in-left delay-2">
+                                 <label for="user_email">Email</label>
+                                 <input type="email" name="user_email" placeholder="Enter your email address" required>
+                            </div>
+
+                            <div class="cta-form-group animate-on-scroll slide-in-left delay-3">
+                                <label for="user_phone">Phone Number</label>
+                                <input type="tel" name="user_phone" id="phone" placeholder="Enter phone number" required>
+                            </div>
+
+                            <button type="submit" class="cta-submit-btn animate-on-scroll slide-in-left delay-4">Send Inquiry</button>
+                        </form>
+                    </div>
+                    
+
+                    <!-- Contact Information -->
+                    <div class="cta-contact-info animate-on-scroll slide-in-right">
+                        <div class="cta-contact-methods">
+                            <div class="cta-contact-method animate-on-scroll slide-in-right delay-1">
+                                <div class="cta-contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="cta-contact-details">
+                                    <h4>Call Us</h4>
+                                    <p>+971 4 123 4567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="cta-contact-method animate-on-scroll slide-in-right delay-2">
+                                <div class="cta-contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="cta-contact-details">
+                                    <h4>Email Us</h4>
+                                    <p>info@bluebrickrealestate.com</p>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                        <div class="cta-why-choose animate-on-scroll slide-in-right delay-3">
+                            <h4>Why Choose BlueBrick Real Estate?</h4>
+                            <ul>
+                                <li>Extensive experience in property consulting</li>
+                                <li>Trusted by hundreds of satisfied clients</li>
+                                <li>Exclusive residential and commercial listings</li>
+                                <li>Complete property buying and selling support</li>
+                                <li>Dedicated team of real estate professionals</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>BlueBrick Real Estate</h3>
+                    <p>Professional real estate company offering trusted property solutions and quality homes in prime locations.</p>
+                    
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <!-- <li><a href="">Properties</a></li> -->
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>OFFICE</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Suite 502, The Opus by Omniyat, Al A'amal St, Business Bay, Dubai, UAE</li>
+                        <li><i class="fas fa-phone"></i> +971 99 000 xxxx</li>
+                        <li><i class="fas fa-envelope"></i> info@bluebrickrealestate.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9am - 5pm</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Stay in Touch</h3>
+                    <p>Connect with us on social media</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 BlueBrick Real Estate. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="index.js"></script>
+        <script src="about.js"></script>
+        <script src="load-morebtn.js"></script>
+</body>
+</html>
